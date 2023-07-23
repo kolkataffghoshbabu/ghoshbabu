@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Color Change</title>
+  <link rel="stylesheet" href="styles.css">
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.color-changing-box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation: colorChange 5s linear infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+</head>
+<body>
+  <div class="color-changing-box"></div>
+</body>
+</html>
